@@ -1,0 +1,261 @@
+@media (max-width:3000px) and (min-width: 800px) {
+    .start .main-img .img-list {
+        width: 48rem;
+        height: 52rem;
+    }
+
+    .start .main-img .butterfly-01 {
+        width: 6.0rem;
+        left: -2%;
+        top:0%;
+    }
+
+    .start .main-img .butterfly-02 {
+        width: 6.5rem;
+        right: 40%;
+    }
+
+    .start .main-img .book-01 {
+        height: 28rem;
+        bottom: 10%;
+    }
+
+    .start .main-img .book-02 {
+        height: 11.2rem;
+    }
+
+    .start .main-img .watermelon {
+        z-index: 2;
+        height: 10.6rem;
+        bottom: 30%;
+        left: 38%;
+    }
+
+    .start .main-img .flower-bottle-01 {
+        height: 30.8rem;
+        bottom: 29%;
+        right: 13%;
+
+    }
+
+    .start .main-img .flower-bottle-02 {
+        height: 25.8rem;
+        top: -8%;
+        left: 6%;
+    }
+
+    .start .main-img .table {
+        height: 16.3rem;
+        bottom: 0%;
+        right: 12%;
+    }
+}
+@media (max-width:800px) and (min-width: 600px) {
+    .start {
+        padding:5.5rem 0 1.6rem;
+        
+    }
+    .title {
+        margin-bottom: 1.2rem;
+    }
+    .start .main-img .img-list {
+        width: 38rem;
+        height: 50rem;
+    }
+
+    .start .main-img .butterfly-01 {
+        width: 5.0rem;
+        left: -2%;
+        top:10%;
+    }
+
+    .start .main-img .butterfly-02 {
+        width: 6.0rem;
+        right: 40%;
+        top:2%;
+    }
+
+    .start .main-img .book-01 {
+        height: 22rem;
+        bottom: 10%;
+    }
+
+    .start .main-img .book-02 {
+        height: 8.2rem;
+    }
+
+    .start .main-img .watermelon {
+        z-index: 2;
+        height: 8.6rem;
+        bottom: 27.5%;
+        left: 35%;
+    }
+
+    .start .main-img .flower-bottle-01 {
+        height: 30.8rem;
+        bottom: 26%;
+        right: 8%;
+
+    }
+
+    .start .main-img .flower-bottle-02 {
+        height: 25.8rem;
+        top: 0;
+        left: 4%;
+    }
+
+    .start .main-img .table {
+        height: 14.3rem;
+        bottom: 0%;
+        right: 12%;
+    }
+
+}
+@media (max-width:600px) and (min-width:300px) {
+    .start {
+        padding:5.5rem 0 1.6rem;
+        min-height: auto;
+    }
+    .start p {
+        font-size: var(--font14);
+        line-height: 2.0rem;
+    }
+    .title {
+        margin-bottom: 1.2rem;
+    }
+    .select ul {
+        width: calc(100% - 3.2rem);
+    }
+    .start .main-img .img-list {
+        width: 32rem;
+        height: 40rem;
+    }
+
+    .start .main-img .butterfly-01 {
+        width: 4.0rem;
+        left: -2%;
+        top:20%;
+    }
+
+    .start .main-img .butterfly-02 {
+        width: 5.0rem;
+        right: 48%;
+        top:4%;
+    }
+
+    .start .main-img .book-01 {
+        height: 18rem;
+        bottom: 10%;
+    }
+
+    .start .main-img .book-02 {
+        height: 7.2rem;
+    }
+
+    .start .main-img .watermelon {
+        z-index: 2;
+        height: 7.6rem;
+        bottom: 32%;
+        left: 30%;
+    }
+
+    .start .main-img .flower-bottle-01 {
+        height: 25.8rem;
+        bottom: 31.5%;
+        right: 12%;
+
+    }
+
+    .start .main-img .flower-bottle-02 {
+        height: 18.8rem;
+        top: 3%;
+        left: 4%;
+    }
+
+    .start .main-img .table {
+        height: 13.3rem;
+        bottom: 0%;
+        right: 12%;
+    }
+    .deco {
+        padding:5.5rem 0 1.6rem;
+        gap: 1.45rem;
+    }
+    #svgContainer {
+        height: calc(100% - 220px);
+      }
+    .swiper-wrapper {
+        padding:0 1.6rem;
+    }
+    
+    #svgPalette {
+        width: 90%;
+    }
+}
+@media (max-height:917px) and (min-height:0px) {
+    .start {
+        padding:5.5rem 0 1.6rem;
+    }
+    .start p {
+        font-size: var(--font14);
+        line-height: 2.0rem;
+    }
+    .title {
+        margin-bottom: 1.2rem;
+    }
+    .select ul {
+        width: calc(100% - 3.2rem);
+    }
+    .start .main-img .img-list {
+        width: 32rem;
+        height: 40rem;
+    }
+
+    .start .main-img .butterfly-01 {
+        width: 4.0rem;
+        left: -2%;
+        top:20%;
+    }
+
+    .start .main-img .butterfly-02 {
+        width: 5.0rem;
+        right: 48%;
+        top:4%;
+    }
+
+    .start .main-img .book-01 {
+        height: 18rem;
+        bottom: 10%;
+    }
+
+    .start .main-img .book-02 {
+        height: 7.2rem;
+    }
+
+    .start .main-img .watermelon {
+        z-index: 2;
+        height: 7.6rem;
+        bottom: 32%;
+        left: 30%;
+    }
+
+    .start .main-img .flower-bottle-01 {
+        height: 25.8rem;
+        bottom: 31.5%;
+        right: 12%;
+
+    }
+
+    .start .main-img .flower-bottle-02 {
+        height: 18.8rem;
+        top: 3%;
+        left: 4%;
+    }
+
+    .start .main-img .table {
+        height: 13.3rem;
+        bottom: 0%;
+        right: 12%;
+    }
+
+}

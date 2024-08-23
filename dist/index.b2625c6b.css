@@ -1,0 +1,462 @@
+.start {
+  background: var(--color0);
+  box-sizing: border-box;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 700px;
+  padding: 10.6rem 0 1.6rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.select {
+  background: var(--color0);
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 10.6rem 0 1.6rem;
+}
+
+.title {
+  width: 100%;
+  margin-bottom: 2.6rem;
+  transition: all .3s;
+}
+
+.title svg, .title svg path {
+  width: 100%;
+}
+
+.start p {
+  text-align: center;
+  color: var(--color2);
+  line-height: 2.6rem;
+  transition: all .3s;
+}
+
+.start .main-img {
+  flex: 1 0 auto;
+}
+
+.start .main-img .img-list {
+  width: 26.98rem;
+  height: 42rem;
+  transition: all .3s;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start .main-img .time {
+  opacity: 0;
+  transition: all .3s;
+  position: absolute;
+}
+
+.start .main-img .butterfly-01 {
+  width: 5rem;
+  top: 5%;
+  left: -5%;
+}
+
+.start .main-img .butterfly-02 {
+  width: 5rem;
+  top: -5%;
+  right: 28%;
+  transform: rotate(-120deg);
+}
+
+.start .main-img .book-01 {
+  height: 22rem;
+  bottom: 10%;
+}
+
+.start .main-img .book-02 {
+  z-index: 2;
+  height: 7.2rem;
+  bottom: 0;
+  right: 0;
+}
+
+.start .main-img .watermelon {
+  z-index: 2;
+  height: 7.6rem;
+  bottom: 23.5%;
+  left: 30%;
+}
+
+.start .main-img .flower-bottle-01 {
+  height: 24.8rem;
+  bottom: 22%;
+  right: 6%;
+}
+
+.start .main-img .flower-bottle-02 {
+  height: 20.8rem;
+  top: -6%;
+  left: 8%;
+}
+
+.start .main-img .table {
+  height: 10.3rem;
+  bottom: 0%;
+  right: 12%;
+}
+
+.button {
+  background-color: var(--color1);
+  color: #fff;
+  font-size: var(--font14);
+  border-radius: var(--border10);
+  font-weight: var(--font-w5);
+  border: none;
+  flex: 0 0 4.8rem;
+  width: calc(100% - 3.2rem);
+  margin: 0 auto auto 1.6rem;
+}
+
+.select {
+  flex-direction: column;
+  display: flex;
+}
+
+.select p {
+  font-size: var(--font20);
+  font-weight: var(--font-w7);
+  color: var(--color1);
+  text-align: center;
+  width: 100%;
+  display: inline;
+}
+
+.select-box {
+  box-sizing: border-box;
+  flex: 1 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.select ul {
+  aspect-ratio: 1;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  width: 55%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  transition: all .3s;
+  display: flex;
+}
+
+.select ul li {
+  flex: 1 0 calc(50% - 1.6rem);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.select ul li button {
+  background: var(--color3);
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  transition: all .3s;
+}
+
+.select ul li button.selected {
+  background-color: #fff;
+  width: 98%;
+  height: 98%;
+}
+
+.deco {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  height: 100vh;
+  padding: 10.6rem 0 1.6rem;
+  transition: all .3s;
+  display: flex;
+}
+
+.deco.over {
+  height: 100%;
+}
+
+.deco p {
+  color: var(--color2);
+  font-size: var(--font14);
+  font-weight: var(--font-w5);
+  text-align: center;
+  width: 100%;
+}
+
+.deco-title.off {
+  display: none;
+}
+
+#svgContainer {
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  width: calc(100% - 3.2rem);
+  height: calc(100% - 280px);
+  position: relative;
+  overflow: hidden;
+}
+
+.svgImage {
+  cursor: move;
+  -webkit-user-select: none;
+  user-select: none;
+  position: absolute;
+}
+
+#svgPalette {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 60%;
+  transition: all .3s;
+  display: flex;
+  overflow: auto;
+}
+
+#svgPalette svg {
+  cursor: pointer;
+  flex: none;
+  width: 5rem;
+  height: 5rem;
+}
+
+.deco .colorOption {
+  cursor: pointer;
+  border: none;
+  border-radius: 5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+#colorOptions {
+  background: #000;
+  border-radius: 50rem;
+  gap: .8rem;
+  padding: .8rem;
+  display: inline-flex;
+}
+
+.deco.spring .colorOption:first-child {
+  background: linear-gradient(#fff 12.68%, #faf6ff 56.66%, #ffecf4 99.99%);
+}
+
+.deco.spring .colorOption:nth-child(2) {
+  background: linear-gradient(#fff 12.68%, #ffecec 56.66%, #ffeee4 99.99%);
+}
+
+.deco.spring .colorOption:nth-child(3) {
+  background: linear-gradient(#fff 12.68%, #fff6e4 56.66%, #f7f9d7 99.99%);
+}
+
+.deco.spring .colorOption:nth-child(4) {
+  background: #fff;
+}
+
+.deco.summer .colorOption:first-child {
+  background: linear-gradient(144deg, #fff 13.63%, #ffebcc 44.62%, #a2e4a7 90.19%);
+}
+
+.deco.summer .colorOption:nth-child(2) {
+  background: linear-gradient(154deg, #fff 6.15%, #ccf1f4 49.28%, #bfe4ff 82.35%);
+}
+
+.deco.summer .colorOption:nth-child(3) {
+  background: linear-gradient(155deg, #fff -1.49%, #f3e8ff 34.3%, #ffd5e7 89.9%);
+}
+
+.deco.summer .colorOption:nth-child(4) {
+  background: #fff;
+}
+
+.deco.autumn .colorOption:first-child {
+  background: linear-gradient(#fff 12.68%, #ffebdd 56.66%, #f6f3e1 99.99%);
+}
+
+.deco.autumn .colorOption:nth-child(2) {
+  background: linear-gradient(#fff 12.68%, #eeedd7 64%, #eadbd0 99.98%);
+}
+
+.deco.autumn .colorOption:nth-child(3) {
+  background: linear-gradient(175deg, #fff 14.33%, #e0e5f2 48.02%, #eeeddf 97.65%);
+}
+
+.deco.autumn .colorOption:nth-child(4) {
+  background: #fff;
+}
+
+.deco.winter .colorOption:first-child {
+  background: linear-gradient(#fff 12.68%, #f2f4f7 56.66%, #e1e4f5 99.99%);
+}
+
+.deco.winter .colorOption:nth-child(2) {
+  background: linear-gradient(#fff 12.68%, #f1ecf7 56.66%, #ebf1ef 99.99%);
+}
+
+.deco.winter .colorOption:nth-child(3) {
+  background: linear-gradient(175deg, #fff 14.33%, #e9efe9 56.83%, #e5eeff 97.65%);
+}
+
+.deco.winter .colorOption:nth-child(4) {
+  background: #fff;
+}
+
+.deco .swiper-slide {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.deco .btn-list {
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex: 1 0 100%;
+  gap: 1.6rem;
+  height: 4.8rem;
+  padding: 0 1.6rem;
+  display: flex;
+}
+
+.btn-list button {
+  border-radius: var(--border10);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 4.8rem;
+}
+
+#completeButton, #removeButton {
+  background: var(--color1);
+  color: #fff;
+  flex: 1 0 calc(50% - 1.6rem);
+}
+
+#saveButton, #shareButton {
+  font-size: var(--font14);
+  font-weight: var(--font-w6);
+  border: none;
+  border-radius: 1rem;
+  flex: 1 0 calc(50% - 1.6rem);
+  height: 4.8rem;
+}
+
+#fistButton {
+  background-color: inherit;
+  font-size: var(--font14);
+  color: var(--color2);
+  border: none;
+  flex: 1 0 100%;
+}
+
+.fixd {
+  box-sizing: border-box;
+  background: linear-gradient(#15151500 .67%, #151515 68.67%);
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 1.6rem 3rem;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.last-txt {
+  display: none;
+}
+
+.last-txt.open {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.we-solvek {
+  background-color: #000;
+  border-radius: 2rem 2rem 0 0;
+  flex-wrap: wrap;
+  gap: 5rem 1.6rem;
+  width: 100%;
+  margin: 0;
+  padding: 3rem 1.6rem;
+  display: none;
+}
+
+.we-solvek.open {
+  display: flex;
+}
+
+.we-solvek p {
+  font-size: var(--font18);
+  color: #fff;
+  font-weight: 800;
+}
+
+.we-solvek ul {
+  flex-direction: column;
+  flex: 1 0 100%;
+  gap: 4rem;
+  margin: 0;
+  padding: 0 0 12rem;
+  display: flex;
+}
+
+.we-solvek ul li {
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+}
+
+.we-solvek ul li .sol-list {
+  display: block;
+}
+
+.we-solvek ul li .sol-list button {
+  background: initial;
+  border: none;
+  border-bottom: 1px solid #5b5b5b;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 2rem;
+  display: flex;
+}
+
+.we-solvek ul li .sol-list button p {
+  font-weight: var(--font-w6);
+  color: #fff;
+  width: auto;
+  font-size: 1.4rem;
+  display: inline;
+}
+
+.we-solvek ul li .sol-list button span {
+  background: url("arrow.a1dfbd8b.png") 50% / cover no-repeat;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: block;
+}
+
+.we-solvek ul li p {
+  text-align: left;
+  color: #b3b3b3;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  display: block;
+}
+/*# sourceMappingURL=index.b2625c6b.css.map */

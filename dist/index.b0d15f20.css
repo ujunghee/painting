@@ -1,0 +1,126 @@
+* {
+  font-size: 62.5%;
+}
+
+:root {
+  --color0: linear-gradient(180deg, #fff 14.85%, #ffeae9 48.14%, #d2f1d4 105.8%);
+  --color1: #151515;
+  --color2: #949494;
+  --color3: #ffffff72;
+  --color4: #fff;
+  --font14: 1.4rem;
+  --font16: 1.6rem;
+  --font18: 1.8rem;
+  --font20: 2rem;
+  --font24: 2.4rem;
+  --font-w1: 100;
+  --font-w3: 300;
+  --font-w4: 400;
+  --font-w5: 500;
+  --font-w6: 600;
+  --font-w7: 700;
+  --font-w8: 800;
+  --font-f1: "SUIT";
+  --border-c1: 1px solid #5b5b5b;
+  --border10: 10px;
+  --border20: 20px;
+  --transition-up: cubic-bezier(.53, .01, .09, .99) 0s;
+  --blur: 20.7%;
+}
+
+a {
+  color: #bbb;
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  max-width: 102.4rem;
+  margin: 0 auto;
+}
+
+p, span, strong, div, input, select, textarea, button {
+  font-size: var(--font16);
+  font-family: var(--font-f1);
+  margin: 0;
+}
+
+.blind {
+  color: #0000 !important;
+  clip: rect(0px, 0px, 0px, 0px) !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: inherit;
+  border-radius: 57px;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+  height: 100px;
+  margin-left: -6px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+:focus {
+  outline: 3px solid #aaa;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+select:focus {
+  border: 1px solid var(--color-b-04);
+}
+
+input[type="checkbox"]:focus {
+  outline: 3px solid #aaa;
+}
+
+input[type="checkbox"]:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input[type="radio"]:focus {
+  outline: 3px solid #aaa;
+}
+
+input[type="radio"]:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+textarea:focus {
+  outline: 3px solid #aaa;
+}
+
+textarea:focus:not(:focus-visible) {
+  outline: 0;
+}
+/*# sourceMappingURL=index.b0d15f20.css.map */

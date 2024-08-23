@@ -1,0 +1,22 @@
+{
+  "name": "side",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./index.html first.html deco_spring.html deco_summer.html deco_autumn.html deco_winter.html next.html --no-cache"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "canvasjs": "^1.8.3",
+    "gsap": "^3.12.5",
+    "jsdom": "^24.1.1",
+    "lodash": "^4.17.21",
+    "reset-css": "^5.0.2",
+    "swiper": "^11.1.10"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
