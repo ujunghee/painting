@@ -22,15 +22,23 @@
   transition: all .3s;
 }
 
-.title svg, .title svg path {
+.title svg {
   width: 100%;
+}
+
+.title svg path {
+  opacity: 0;
+  width: 100%;
+  transform: translateY(10px);
 }
 
 .start p {
   text-align: center;
   color: var(--color2);
+  opacity: 0;
   line-height: 2.6rem;
-  transition: all .3s;
+  transition: all .8s cubic-bezier(.54, 0, .29, 1.19);
+  transform: translateY(10px);
 }
 
 .start .main-img {
@@ -105,14 +113,48 @@
 
 .button {
   background-color: var(--color1);
-  color: #fff;
-  font-size: var(--font14);
   border-radius: var(--border10);
-  font-weight: var(--font-w5);
+  color: #fff;
   border: none;
   flex: 0 0 4.8rem;
   width: calc(100% - 3.2rem);
   margin: 0 auto auto 1.6rem;
+  transition: all .8s cubic-bezier(.54, 0, .29, 1.19);
+  position: relative;
+}
+
+.start .button {
+  opacity: 0;
+  bottom: -5rem;
+}
+
+.button p {
+  font-size: var(--font14);
+  border-radius: var(--border10);
+  font-weight: var(--font-w5);
+  z-index: 4;
+  color: #fff;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  position: absolute;
+  inset: 0;
+}
+
+.button .bg {
+  border-radius: var(--border10);
+  font-weight: var(--font-w5);
+  background-color: #5b5b5b;
+  width: 100%;
+  height: 100%;
+  transition: all .2s;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  scale: 0;
 }
 
 .select {

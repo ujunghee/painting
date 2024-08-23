@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"1xKBY":[function(require,module,exports) {
+})({"kmNqX":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -589,6 +589,6 @@ var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 function Swiperbox() {}
 
-},{"swiper":"iM6UL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["1xKBY","g3Ydw"], "g3Ydw", "parcelRequire94cb")
+},{"swiper":"iM6UL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["kmNqX","g3Ydw"], "g3Ydw", "parcelRequire94cb")
 
 //# sourceMappingURL=index.059f1018.js.map

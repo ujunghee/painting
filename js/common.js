@@ -51,32 +51,61 @@ window.loadPage = loadPage;
 //ajax end  
 
 // gsap
+
+// gsap
 function animateElements() {
+
+    const mainBtn = document.querySelector('.start .button'); 
+
+    document.addEventListener('', () => {
+        
+    })
 
     var tl = gsap.timeline({
         ease: "sine.inOut",
     })
 
+    tl.to('.title svg path', {
+        opacity: 1,
+        y: 0,
+        stagger : {
+            each: 0.02,
+        }
+    });
+
+    tl.to('.start p', {
+        opacity: 1,
+        y: 0,
+        stagger : {
+            each: 0.05,
+        }
+    }, '<=');
+
     tl.to('.time', {
         ease: "sine.inOut",
         duration: 1,
-        opacity:1,
+        opacity: 1,
         stagger: {
-            each: 0.2,
+            each: 0.1,
         }
-    })
-  
+    }, '<=.1')
+
+    tl.to('.start .button', {
+        opacity: 1,
+        y: -50,
+    }, '<=.4');
+
     tl.to('.butterfly-01', {
-      duration: 2,
-      x: "random(-15, 15)",
-      y: "random(-30, 15)",
-      scale: .95, // 크기 살짝 변화
-      rotation: -15,
-      repeat: -1,
-      yoyo: true,
-      duration: "random(1.5, 2.5)",
-    },'<=');
-  
+        duration: 2,
+        x: "random(-15, 15)",
+        y: "random(-30, 15)",
+        scale: .95, // 크기 살짝 변화
+        rotation: -15,
+        repeat: -1,
+        yoyo: true,
+        duration: "random(1.5, 2.5)",
+    });
+
     tl.to('.butterfly-02', {
         x: "random(-15, 15)", // 랜덤한 수평 이동
         y: "random(-10, 10)", // 랜덤한 수직 이동
@@ -85,9 +114,10 @@ function animateElements() {
         repeat: -1,
         yoyo: true,
         ease: "sine.inOut"
-      });
-  
-} 
+    }, '<=');
+
+
+}
 
 // swiper
 function Swiperbox() {
