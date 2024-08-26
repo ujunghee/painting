@@ -8,6 +8,7 @@
     min-height: 700px;
     transition: .3s;
     height: 100vh;
+    position: relative;
 }
 
 .select {
@@ -163,7 +164,7 @@
     flex-direction: column;
 }
 
-.select p {
+.select p:not(button) {
     font-size: var(--font20);
     font-weight: var(--font-w7);
     color: var(--color1);

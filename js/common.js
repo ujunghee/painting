@@ -42,8 +42,8 @@ function loadPage(page, callback) {
 // 기본 페이지 로드
 document.addEventListener('DOMContentLoaded', function() {
     loadPage('first.html', function() {
-        initializeDeco(); 
-        initializeNext();
+        // initializeDeco(); 
+        // initializeNext();
         animateElements();
         Swiperbox();
     });
