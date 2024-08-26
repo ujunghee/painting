@@ -1,6 +1,6 @@
 import _ from '../node_modules/lodash/lodash.js';
-import { gsap } from 'gsap';
-import Swiper from 'swiper';
+import { gsap } from '../node_modules/gsap/index.js';
+import Swiper from '../node_modules/swiper/swiper.mjs';
 
 //ajax start
 function loadPage(page, callback) {
