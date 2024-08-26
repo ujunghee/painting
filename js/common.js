@@ -34,6 +34,7 @@ function loadPage(page, callback) {
             } else {
                 console.error('Error loading page:', xhr.status, xhr.statusText);
             }
+            
         }
     };
     xhr.send();

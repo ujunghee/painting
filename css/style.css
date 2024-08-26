@@ -128,6 +128,7 @@
 .start .button {
     opacity: 0;
     bottom: -5rem;
+    
 }
 .button p {
     font-size: var(--font14);

@@ -120,6 +120,7 @@ function initializeDeco() {
             draggingElement.style.left = `${x}px`;
             draggingElement.style.top = `${y}px`;
         }
+        
     }
 
 
