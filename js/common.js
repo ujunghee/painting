@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from './node_modules/lodash/lodash.js';
 import { gsap } from 'gsap';
 import Swiper from 'swiper';
 
