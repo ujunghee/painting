@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"hGoH4":[function(require,module,exports) {
+})({"kZdrL":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -584,6 +584,31 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"bOwHr":[function(require,module,exports) {
+// next.html
+function initializeNext() {
+    let selectedSeason = "";
+    document.querySelectorAll(".select-box button").forEach((button)=>{
+        button.addEventListener("click", function() {
+            document.querySelectorAll(".select-box button").forEach((btn)=>btn.classList.remove("selected"));
+            this.classList.add("selected");
+            selectedSeason = this.getAttribute("data-season");
+        });
+    });
+    document.querySelector(".deco-next").addEventListener("click", function() {
+        if (selectedSeason) {
+            const pages = {
+                "spring": "deco_spring.html",
+                "summer": "deco_summer.html",
+                "autumn": "deco_autumn.html",
+                "winter": "deco_winter.html"
+            };
+            loadPage(pages[selectedSeason], function() {
+                console.log("\uD398\uC774\uC9C0 \uB85C\uB4DC \uC644\uB8CC:", selectedSeason);
+            });
+        } else alert("\uACC4\uC808\uC744 \uC120\uD0DD\uD574\uC8FC\uC138\uC694.");
+    });
+}
+// deco.html
 function initializeDeco() {
     const svgContainer = document.getElementById("svgContainer");
     const svgPalette = document.getElementById("svgPalette");
@@ -770,8 +795,8 @@ function initializeDeco() {
             const wrapper = document.createElement("div");
             wrapper.className = "svgImage draggable";
             wrapper.style.position = "absolute";
-            wrapper.style.left = "50px"; // 퍼센트 대신 픽셀 값 사용
-            wrapper.style.top = "50px"; // 퍼센트 대신 픽셀 값 사용
+            wrapper.style.left = "5.0rem";
+            wrapper.style.top = "5.0rem";
             wrapper.appendChild(newSvg);
             svgContainer.appendChild(wrapper);
         }
@@ -792,7 +817,7 @@ function initializeDeco() {
         // 편집 기능 비활성화
         svgContainer.removeEventListener("mousedown", handleDragStart);
         svgContainer.removeEventListener("touchstart", handleDragStart);
-        svgContainer.style.height = "calc(100% - 350px)";
+        svgContainer.style.height = "calc(100% - 25rem)";
         weSolevkContainer.classList.add("open");
         lastTxt.classList.add("open");
         // decoTitle.classList.add('off');
@@ -803,6 +828,10 @@ function initializeDeco() {
             decoTitle.forEach((item)=>{
                 item.classList.add("off");
             });
+        });
+        const deco = document.querySelectorAll(".deco");
+        deco.forEach((item)=>{
+            item.style.minHeight = "700px";
         });
         // 편집 기능 비활성화
         disableEditing();
@@ -883,6 +912,6 @@ function initializeDeco() {
     changeBackgroundColor("#FFFFFF");
 }
 
-},{}]},["hGoH4","bOwHr"], "bOwHr", "parcelRequire94cb")
+},{}]},["kZdrL","bOwHr"], "bOwHr", "parcelRequire94cb")
 
 //# sourceMappingURL=index.3645590b.js.map
