@@ -25,6 +25,7 @@ function initializeNext() {
         }
     });
 }
+
 // deco.html
 function initializeDeco() {
 
