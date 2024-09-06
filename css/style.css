@@ -133,6 +133,10 @@
     opacity: 0;
     display:none;
 }
+.select .button {
+    opacity: 0;
+    display:none;
+}
 /* 계절 선택 */
 .select {
     display: flex;
@@ -177,6 +181,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    transform: translateY(20px);
+    opacity: 0;
 }
 
 .select ul li button {
@@ -219,6 +225,11 @@
 
 .deco-title.off {
     display: none;
+}
+
+.deco-title {
+    opacity: 0;
+    transform: translateY(1.0rem);
 }
 
 
@@ -271,6 +282,11 @@
     gap: .8rem;
     padding: .8rem;
     display: inline-flex;
+}
+
+.coloroption{
+    opacity: 0;
+    transform: translateY(1.0rem);
 }
 
 .deco.spring .colorOption:nth-child(1) {
@@ -340,6 +356,8 @@
 .deco .swiper-slide {
     display: flex;
     align-items: center;
+    transform: translateY(1.0rem);
+    opacity: 0;
     justify-content: center;
 }
 

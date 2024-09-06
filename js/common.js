@@ -28,6 +28,7 @@ function loadPage(page, callback) {
                 }
 
                 if (decoPages.includes(page)) {
+                    animateElementsThree();
                     initializeDeco();
                     Swiperbox();
                 }
@@ -127,20 +128,59 @@ function  animateElementsTwo() {
         y:0,
     })
 
-    tl.to('.start .button', {
+    tlTwo.to('.select-box ul li', {
+        opacity: 1,
+        y: 0,
+        stagger: {
+            each: 0.1,
+        },
+    }, '<=.2');
+
+    tlTwo.to('.select .button', {
         opacity: 1,
         y: 50,
         display: 'none',
     }, '<=.2');
 
-    tl.to('.start .button', {
+    tlTwo.to('.select .button', {
         opacity: 1,
         y: 0,
         display: 'block',
     }, '<=.1');
-
 }
 // 두번째 페이지 gsap end 
+
+
+// 세번째 페이지 gsap start
+function animateElementsThree() {
+
+    const tlthree = gsap.timeline({
+        ease: "sine.inOut",
+    })
+
+    tlthree.to('.deco-title', {
+        opacity: 1,
+        y: 0,   
+    })
+
+    tlthree.to('.deco .swiper-slide', {
+        opacity: 1,
+        y: 0,   
+        stagger: {
+            each: 0.035,
+        },
+    },'<=')
+
+    tlthree.to('.coloroption', {
+        opacity:1,
+        y:0,
+        stagger: {
+            each: 0.05,
+        },
+    },'<=-.1') 
+}
+// 세번째 페이지 gsap end
+
 
 // swiper
 function Swiperbox() {
