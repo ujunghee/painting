@@ -251,6 +251,8 @@
     position: absolute;
     cursor: move;
     user-select: none;
+    width: 5.0rem;
+    height: 5.0rem;
 }
 
 #svgPalette {
