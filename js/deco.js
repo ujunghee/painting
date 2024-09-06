@@ -39,6 +39,7 @@ function initializeDeco() {
 
     const decoTitle = document.querySelectorAll('.deco-title');
     const weSolevkContainer = document.querySelector('.we-solvek');
+    const fixdbox = document.querySelector('.fixd');
     const lastTxt = document.querySelector('.last-txt');
     const btnList = document.querySelector('.btn-list');
 
@@ -274,6 +275,7 @@ function initializeDeco() {
         svgContainer.style.height = 'calc(100% - 25rem)';
         weSolevkContainer.classList.add('open');
         lastTxt.classList.add('open');
+        fixdbox.style.display = 'flex';
 
 
         // decoTitle.classList.add('off');
@@ -384,11 +386,12 @@ function initializeDeco() {
     changeBackgroundColor('#FFFFFF');
 
     
+   
     function lastgsap() {
         const svgbox = document.querySelector('.svgbox'); 
 
         svgbox.style.opacity = 0;
-        
+
         var lasttl = gsap.timeline({
             ease: "sine.inOut",
         })
@@ -404,12 +407,54 @@ function initializeDeco() {
             stagger: {
                 each: 0.05,
             },
-        })
+        },'<=.2')
 
         lasttl.to('.svgbox', {
             opacity: 1,
             y: 0,   
-        })
+        },'<=-.1')
+
+        lasttl.to('.we-solvek', {
+            opacity: 1,
+            y: 0,   
+        },'<=.3')
+
+        lasttl.to('.fixd', {
+            background:"linear-gradient(180deg, rgba(21, 21, 21, 0.00) 0.67%, #151515 68.67%)"
+        },'<=.3')
+
+        lasttl.to('.fixd button', {
+            opacity: 1,
+            y: 0,   
+            stagger: {
+                each: 0.15,
+            },
+        },'<=')
+
+        lasttl.to('.we-solvek ul li .sol-list', {
+            opacity: 1,
+            y: 0,   
+            stagger: {
+                each: 0.15,
+            },
+        },'<=')
+
+        lasttl.to('.we-solvek p', {
+            opacity: 1,
+            y: 0,   
+            stagger: {
+                each: 0.15,
+            },
+        },'<=')
+
+        lasttl.to('.we-solvek p', {
+            opacity: 1,
+            y: 0,   
+            stagger: {
+                each: 0.15,
+            },
+        },'<=.3')
+
     }
 }
 
