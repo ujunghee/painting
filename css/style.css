@@ -31,6 +31,8 @@
     width: 100%;
     opacity: 0;
     transform: translateY(10px);
+    width: 5.0rem;
+    height: 5.0rem;
 }
 .start p {
     text-align: center;
