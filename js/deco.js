@@ -303,6 +303,9 @@ function initializeDeco() {
 
         // Optionally, navigate to last.html
         // window.location.href = 'last.html';
+
+        //gsap
+        lastgsap();
     });
 
     // 편집 기능 비활성화 함수
@@ -379,5 +382,34 @@ function initializeDeco() {
 
     // 초기 배경색 설정
     changeBackgroundColor('#FFFFFF');
+
+    
+    function lastgsap() {
+        const svgbox = document.querySelector('.svgbox'); 
+
+        svgbox.style.opacity = 0;
+        
+        var lasttl = gsap.timeline({
+            ease: "sine.inOut",
+        })
+
+        lasttl.to('.last-title', {
+            opacity: 1,
+            y: 0,   
+        })
+
+        lasttl.to('.last-txt svg path', {
+            opacity: 1,
+            y: 0,   
+            stagger: {
+                each: 0.05,
+            },
+        })
+
+        lasttl.to('.svgbox', {
+            opacity: 1,
+            y: 0,   
+        })
+    }
 }
 

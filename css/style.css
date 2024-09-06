@@ -240,6 +240,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 1.5rem;
+    transform: translateY(1.0rem);
 }
 /* #svgContainer {
     height: calc(100% - 350px);
@@ -369,6 +370,8 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     height: 4.8rem;
+    opacity: 0;
+    transform: translateY(1.0rem);
 }
 
 .btn-list button {
@@ -422,6 +425,17 @@
     gap: 12px;
     flex-direction: column;
 }
+
+.last-txt svg path {
+    opacity: 0;
+    transform: translateY(1.0rem);
+}
+
+.last-title {
+    transform: translateY(1.0rem);
+    opacity: 0;
+}
+
 
 .we-solvek {
     background-color: #000;

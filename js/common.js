@@ -152,6 +152,7 @@ function  animateElementsTwo() {
 
 
 // 세번째 페이지 gsap start
+
 function animateElementsThree() {
 
     const tlthree = gsap.timeline({
@@ -167,7 +168,7 @@ function animateElementsThree() {
         opacity: 1,
         y: 0,   
         stagger: {
-            each: 0.035,
+            each: 0.02,
         },
     },'<=')
 
@@ -177,7 +178,17 @@ function animateElementsThree() {
         stagger: {
             each: 0.05,
         },
-    },'<=-.1') 
+    },'<=.3') 
+
+    tlthree.to('.btn-list', {
+        opacity:1,
+        y:0,
+        stagger: {
+            each: 0.05,
+        },
+    },'<=.2')
+
+    
 }
 // 세번째 페이지 gsap end
 
